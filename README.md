@@ -32,6 +32,11 @@
 
 透過修改 `config.json` 文件，可以修改語音的參數
 
+- `voice_name`: 語音名稱
+- `voice_pitch`: 語音音調
+- `voice_volume`: 語音音量
+- `voice_rate`: 語音速率
+
 ```json
 {
     "voice_name": "zh-CN-YunxiNeural",

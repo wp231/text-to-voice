@@ -6,9 +6,13 @@ TEMP_FILE_PATH = "text_queue_temp.txt"
 PUNCTUATION_PREFIX = "‛‘‟“〝‵({〈《「『【〔［︵︷︹︻︽︿﹁﹃﹙﹛﹝﹤（｟＜｛❬❮❰〖〘〚〈‹«｢⌃"
 PUNCTUATION_SUFFIX = ",‚，﹐。'\"!！﹗?？﹖；﹔~〜…｀＂’”〞′)}〉》」』】〕］︶︸︺︼︾﹀﹂﹄﹚﹜﹞﹥）｠＞｝❭❯❱〗〙〛〉›»｣⌄"
 
+TEXT_SPLIT_SIZE = 20000
 
 class TextQueue:
-    def __init__(self, file_path: str, chunk_size: int = 20000, encoding: str = 'utf-8'):
+    '''
+    讀取文本檔案，並將其分割成小段以便於處理
+    '''
+    def __init__(self, file_path: str, chunk_size: int = TEXT_SPLIT_SIZE, encoding: str = 'utf-8'):
         self.index = 0
         self.position = 0
         self.is_end = False
