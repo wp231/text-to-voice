@@ -6,7 +6,7 @@ TEMP_FILE_PATH = "text_queue_temp.txt"
 PUNCTUATION_PREFIX = "‛‘‟“〝‵({〈《「『【〔［︵︷︹︻︽︿﹁﹃﹙﹛﹝﹤（｟＜｛❬❮❰〖〘〚〈‹«｢⌃"
 PUNCTUATION_SUFFIX = ",‚，﹐。'\"!！﹗?？﹖；﹔~〜…｀＂’”〞′)}〉》」』】〕］︶︸︺︼︾﹀﹂﹄﹚﹜﹞﹥）｠＞｝❭❯❱〗〙〛〉›»｣⌄"
 
-TEXT_SPLIT_SIZE = 20000
+TEXT_SPLIT_SIZE = 3000
 
 class TextQueue:
     '''

@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-msspeech = "*"
+edge-tts = "==7.2.8"
 ffmpeg-python = "*"
 pydub = "*"
 
